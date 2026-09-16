@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erick Kamizato Scilo — Desenvolvedor de Sistemas</title>
+<meta name="description" content="Portfólio de Erick Kamizato Scilo, desenvolvedor de sistemas freelance — sites e produtos sob medida.">
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --border: #262b35;
+    --text: #f3f4f6;
+    --muted: #9aa1ae;
+    --accent: #b6ff2e;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  .wrap {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+
+  header {
+    margin-bottom: 48px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+  }
+
+  header p {
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0 0 20px;
+  }
+
+  .links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .btn.primary {
+    background: var(--accent);
+    color: #0f1115;
+    border-color: var(--accent);
+  }
+
+  h2 {
+    font-size: 18px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin: 0 0 16px;
+  }
+
+  .projects {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .card-title .tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 2px 9px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  footer {
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+
+  footer a { color: var(--text); }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    .btn { font-size: 16px; padding: 12px 16px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Erick Kamizato Scilo</h1>
+      <p>Desenvolvedor de Sistemas</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:erickscilo@gmail.com">E-mail</a>
+        <a class="btn" href="https://www.linkedin.com/in/erick-kamizato-scilo-0aa536176/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/erickscilo" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Projetos</h2>
+      <div class="projects">
+        <a class="card" href="https://www.navalhei.com.br" target="_blank" rel="noopener">
+          <p class="card-title">Navalhei<span class="tag">produto próprio</span></p>
+          <p>Agendamento por WhatsApp para barbearias — cliente marca o horário direto na conversa, sem baixar aplicativo, e a agenda se organiza sozinha.</p>
+        </a>
+
+        <a class="card" href="https://www.retoquei.com.br" target="_blank" rel="noopener">
+          <p class="card-title">Retoquei<span class="tag">produto próprio</span></p>
+          <p>Mesma plataforma do Navalhei, pensada para salões de beleza — agendamento por WhatsApp para clientes de salão, sem aplicativo.</p>
+        </a>
+
+        <a class="card" href="https://erickscilo.github.io/cardapio-nfc/" target="_blank" rel="noopener">
+          <p class="card-title">Cardápio Biza Pizzas<span class="tag">site institucional</span></p>
+          <p>Cardápio digital estático, publicado com GitHub Pages — acesso direto por QR code/NFC na mesa, sem aplicativo e sem backend.</p>
+        </a>
+
+        <a class="card" href="https://www.instagram.com/studiobiakamizato" target="_blank" rel="noopener">
+          <p class="card-title">Studio Bia Kamizato<span class="tag">identidade &amp; site</span></p>
+          <p>Presença digital para um estúdio de design de estampas — identidade visual e página de apresentação dos serviços.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Contato: <a href="mailto:erickscilo@gmail.com">erickscilo@gmail.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>

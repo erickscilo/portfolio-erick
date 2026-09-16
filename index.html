@@ -87,7 +87,7 @@
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
-    padding: 20px;
+    overflow: hidden;
     text-decoration: none;
     color: var(--text);
     display: block;
@@ -95,6 +95,19 @@
 
   .card:hover {
     border-color: var(--accent);
+  }
+
+  .card-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card-body {
+    padding: 20px;
   }
 
   .card-title {
@@ -143,7 +156,7 @@
       <div class="links">
         <a class="btn primary" href="mailto:erickscilo@gmail.com">E-mail</a>
         <a class="btn" href="https://www.linkedin.com/in/erick-kamizato-scilo-0aa536176/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/erickscilo" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://github.com/KamizatoErick" target="_blank" rel="noopener">GitHub</a>
       </div>
     </header>
 
@@ -151,23 +164,35 @@
       <h2>Projetos</h2>
       <div class="projects">
         <a class="card" href="https://www.navalhei.com.br" target="_blank" rel="noopener">
-          <p class="card-title">Navalhei<span class="tag">produto próprio</span></p>
-          <p>Agendamento por WhatsApp para barbearias — cliente marca o horário direto na conversa, sem baixar aplicativo, e a agenda se organiza sozinha.</p>
+          <img class="card-thumb" src="images/navalhei.jpg" alt="Página inicial do Navalhei" loading="lazy">
+          <div class="card-body">
+            <p class="card-title">Navalhei<span class="tag">produto próprio</span></p>
+            <p>Agendamento por WhatsApp para barbearias — cliente marca o horário direto na conversa, sem baixar aplicativo, e a agenda se organiza sozinha.</p>
+          </div>
         </a>
 
         <a class="card" href="https://www.retoquei.com.br" target="_blank" rel="noopener">
-          <p class="card-title">Retoquei<span class="tag">produto próprio</span></p>
-          <p>Mesma plataforma do Navalhei, pensada para salões de beleza — agendamento por WhatsApp para clientes de salão, sem aplicativo.</p>
+          <img class="card-thumb" src="images/retoquei.jpg" alt="Página inicial do Retoquei" loading="lazy">
+          <div class="card-body">
+            <p class="card-title">Retoquei<span class="tag">produto próprio</span></p>
+            <p>Mesma plataforma do Navalhei, pensada para salões de beleza — agendamento por WhatsApp para clientes de salão, sem aplicativo.</p>
+          </div>
         </a>
 
         <a class="card" href="https://erickscilo.github.io/cardapio-nfc/" target="_blank" rel="noopener">
-          <p class="card-title">Cardápio Biza Pizzas<span class="tag">site institucional</span></p>
-          <p>Cardápio digital estático, publicado com GitHub Pages — acesso direto por QR code/NFC na mesa, sem aplicativo e sem backend.</p>
+          <img class="card-thumb" src="images/cardapio-nfc.jpg" alt="Página inicial do cardápio da Biza Pizzas" loading="lazy">
+          <div class="card-body">
+            <p class="card-title">Cardápio Biza Pizzas<span class="tag">site institucional</span></p>
+            <p>Cardápio digital estático, publicado com GitHub Pages — acesso direto por QR code/NFC na mesa, sem aplicativo e sem backend.</p>
+          </div>
         </a>
 
-        <a class="card" href="https://www.instagram.com/studiobiakamizato" target="_blank" rel="noopener">
-          <p class="card-title">Studio Bia Kamizato<span class="tag">identidade &amp; site</span></p>
-          <p>Presença digital para um estúdio de design de estampas — identidade visual e página de apresentação dos serviços.</p>
+        <a class="card" href="https://www.instagram.com/studiobeatrizkamizato/" target="_blank" rel="noopener">
+          <img class="card-thumb" src="images/studio-biakamizato.jpg" alt="Perfil do Instagram do Studio Bia Kamizato" loading="lazy">
+          <div class="card-body">
+            <p class="card-title">Studio Bia Kamizato<span class="tag">identidade &amp; site</span></p>
+            <p>Presença digital para um estúdio de design de estampas — identidade visual e página de apresentação dos serviços.</p>
+          </div>
         </a>
       </div>
     </section>
